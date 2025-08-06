@@ -26,9 +26,9 @@ public class MakemyTrip {
 		d.findElement(By.xpath("//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div/div[1]/ul/li[2]/span")).click();
 		Thread.sleep(3000);
 		if(d.findElement(By.xpath("//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div/div[1]/ul/li[2]/span")).isSelected()) {
-			System.out.println("Selected round trip");
+			System.out.println("Selected round trip is perfectly good");
 		}else {
-			System.out.println("Selected one way");
+			System.out.println("Selected one way is a one way road");
 		}
 	}
 
