@@ -36,6 +36,7 @@ public class TutorialLink {
 		System.out.println(alertBox.getText());
 		driver.switchTo().frame("");
 		driver.switchTo().defaultContent();
+		System.out.println("quit");
 		
 
 	}
