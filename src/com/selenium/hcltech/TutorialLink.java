@@ -25,7 +25,7 @@ public class TutorialLink {
 			System.out.println("title matches");
 		}
 		else {
-			System.out.println("title doesnt match");
+			System.out.println("title doesnt match with anything");
 		}
 		Thread.sleep(2000);
 		driver.switchTo().window(driver.getWindowHandle());
