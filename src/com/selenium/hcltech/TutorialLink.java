@@ -13,7 +13,7 @@ public class TutorialLink {
 		driver.manage().window().maximize();
 		driver.get("https://www.tutorialspoint.com/selenium/practice/links.php");
 		driver.findElement(By.xpath("/html/body/main/div/div/div[2]/p[1]/a")).click();
-        Thread.sleep(3000);
+        Thread.sleep(100);
         driver.switchTo().window(driver.getWindowHandle());
         //driver.switch_to.window(driver.window_handles[0])
 		String str=driver.getTitle();
@@ -25,7 +25,7 @@ public class TutorialLink {
 			System.out.println("title matches");
 		}
 		else {
-			System.out.println("title doesnt match");
+			System.out.println("title  match");
 		}
 		Thread.sleep(2000);
 		driver.switchTo().window(driver.getWindowHandle());
