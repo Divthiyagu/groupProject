@@ -36,6 +36,12 @@ public class TutorialLink {
 		System.out.println(alertBox.getText());
 		driver.switchTo().frame("");
 		driver.switchTo().defaultContent();
+		System.out.println("quit");
+		Thread.sleep(2000);
+		
+		Thread.sleep(2000);
+		
+		Thread.sleep(2000);
 		
 
 	}
