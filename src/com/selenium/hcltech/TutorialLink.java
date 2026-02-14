@@ -18,14 +18,14 @@ public class TutorialLink {
         //driver.switch_to.window(driver.window_handles[0])
 		String str=driver.getTitle();
 		System.out.println(str);
-		driver.findElement(By.xpath("/html/body/main/div/div/div[2]/p[2]/a")).click();
+		driver.findElmement(By.xpath("/html/body/main/div/div/div[2]/p[2]/a")).click();
 		String st1=driver.getTitle();
 		System.out.println(st1);
 		if(str.equals("Selenium Practice - Links")&& st1.equals("Selenium Practice - Links")) {
-			System.out.println("title matches");
+			System.out.println("title pewrfectly matches");
 		}
 		else {
-			System.out.println("title doesnt match");
+			System.out.println("title is not at all correct");
 		}
 		Thread.sleep(2000);
 		driver.switchTo().window(driver.getWindowHandle());
@@ -33,7 +33,7 @@ public class TutorialLink {
 		
 		driver.findElement(By.xpath("//*[@id=\"created\"]")).click();
 		WebElement alertBox = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/div[1]"));
-		System.out.println(alertBox.getText());
+		System.out.println(alertBox.getText()+"alert is working properly");
 		driver.switchTo().frame("");
 		driver.switchTo().defaultContent();
 		System.out.println("quit");
